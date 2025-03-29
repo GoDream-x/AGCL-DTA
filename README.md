@@ -1,5 +1,6 @@
-# AGCL-DTA 基于注意力和图对比学习的药物-靶标结合亲和力预测研究
-The AGCL-DTA is a novel graph neural network model for drug-target interaction prediction.This method utilizes an enhanced graph convolutional neural network (TopoGCN) and an external attention mechanism to capture rich feature information and key internal structures of drug and target molecules. By employing graph contrastive learning, the model learns mutual information in an unsupervised or semi-supervised manner, enhancing generalization and prediction performance. Experiments on two benchmark datasets demonstrate that our model outperforms existing methods.
+# MVHGNN 基于多视图对比和同源特征的药物靶标结合亲和力预测研究
+The MVHGNN is a novel graph neural network model for drug-target interaction prediction. MVHGNN employs a multi-view contrastive learning framework, using enhanced subgraph topology graph convolutional network (ESTGCN) and graph isomorphism network (GIN) as encoders to capture drug topological structures and protein hierarchical structures. Homology features integrate drug-drug and protein-protein multi-level features, enhancing intra-view feature utilization. Additionally, GCN extracts global topology in the drug-target affinity view. A cross-contrastive learning strategy maximizes mutual information across views, improving representation consistency and cross-view synergy. Experiments on benchmark datasets, particularly Davis, demonstrate MVHGNN’s superior performance (MES: 0.166, Corrected R²: 0.794), out-performing state-of-the-art methods. 
+
 # Dependency
     python 3.10.6
     numpy 1.26.0
